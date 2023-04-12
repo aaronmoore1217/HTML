@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/c79696d483.js" crossorigin="anonymous"></script>
+    <title>Ski Lodge Website</title>
+    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
+    <script src="js/mobiscroll.javascript.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul id="nav">
+                <li id="openNav"><a onclick="openNav()"><i class="fa-solid fa-arrow-right fa-2xl"></i></a></li>
+                <li><a href="index.html" id="home"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+                <li><a href="events.html" id="events"><i class="fa-solid fa-calendar-days fa-2xl"></i></a></li>
+                <li><a href="lessons.html" id="lessons"><i class="fa-solid fa-person-skiing fa-2xl"></i></a></li>
+                <li><a href="snow-reports.html" id="reports"><i class="fa-solid fa-snowflake fa-2xl"></i></a></li>
+                <li><a href="employment.html" id="employment"><i class="fa-solid fa-user-tie fa-2xl"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <pageTitle>
+        <h1 style="color: rgba(65, 65, 65, 0.753); margin-left: 4rem; font-size: larger;"> Events </h1><hr>
+    </pageTitle>
+    <main id="main">
+        <label for="site">Choose a Location:</label>
+        <select name="site" id="Location">
+            <option value="MountainRetreat">Mountain Retreat</option>S
+            <option value="TrailGetaway">Trail Getaway</option>
+        </select>
+        <p>20% discount off the total if booked prior to April 30th<br>
+        10% discount off the total if booked prior to May 31st</p>
+          <div class="mbsc-grid">
+                <div class="mbsc-col-sm-12 mbsc-col-md-4">
+                    <div class="mbsc-form-group">
+                        <div class="mbsc-form-group-title">Counter</div>
+                        <div id="demo-counter"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <script>
+            mobiscroll.setOptions({
+                theme: 'ios',
+                themeVariant: 'light'
+            });
+
+            mobiscroll.datepicker('#demo-counter', {
+                controls: ['calendar'],
+                display: 'inline',
+                selectMultiple: true,
+                selectCounter: true
+            });
+          </script>
+    </main>
+<!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Ski Lodge. All rights reserved.</p>
+        <p><a href="#">Top</a><a href="legal.pdf">Rental Agreement</a></p>
+    </footer>
+    <script src="js.js"></script>
+</body>

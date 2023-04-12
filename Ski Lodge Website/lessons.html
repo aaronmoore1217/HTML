@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/c79696d483.js" crossorigin="anonymous"></script>
+    
+    <title>Ski Lodge Website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul id="nav">
+                <li id="openNav"><a onclick="openNav()"><i class="fa-solid fa-arrow-right fa-2xl"></i></a></li>
+                <li><a href="index.html" id="home"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+                <li><a href="events.html" id="events"><i class="fa-solid fa-calendar-days fa-2xl"></i></a></li>
+                <li><a href="lessons.html" id="lessons"><i class="fa-solid fa-person-skiing fa-2xl"></i></a></li>
+                <li><a href="snow-reports.html" id="reports"><i class="fa-solid fa-snowflake fa-2xl"></i></a></li>
+                <li><a href="employment.html" id="employment"><i class="fa-solid fa-user-tie fa-2xl"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <pageTitle>
+        <h1 style="color: rgba(65, 65, 65, 0.753); margin-left: 4rem; font-size: larger;"> Lessons </h1><hr>
+    </pageTitle>
+    <main id="main">
+        <div class="banner">
+            LESSONS CLOSED FOR SEASON AS OF MARCH 1ST
+        </div>
+        <section>
+            <h2>Lesson Prices</h2>
+            <h3>Season Pass - $750</h3>
+            <p>Will go on sale September 1, myriad of benefits and much better deal, such as permanent ski lift access, lessons, and discounted ski rental</p>
+            <h3>Day Pass - $50/d</h3>
+            <p>access to all ski areas, lessons, and a few free ski lift tickets to top it all off!</p>
+        </section>
+        <section>
+            <h2>Children's Lessons</h2>
+            <p>Children's full day lessons meet from 10am through 3:30pm and include lift access, rentals (ski or snowboard) and lunch. All children (ages 4-12) are welcome regardless of ability or prior experience. Our expert ski and snowboard instructors provide special care and attention to teach children the correct way to ski and ride, from basics of carving turns to safety instruction to advanced lessons and multi-week programs. We focus on having fun in a safe and responsible way!</p>
+            <img src="ski.jpg"> 
+        </section>
+
+        <section>
+            <h2>Terrain Park Lessons</h2>
+            <p>Our terrain park lessons meet from 12:30pm to 4pm at the base of the Powder Keg Terrain Park and include lift access, rentals (ski or snowboard), and an afternoon snack. We start with the basics and progress through all skill levels. Learn how to ride the rails, half pipe, and jumps. Must be 13 years old. Our proven techniques will teach you how to maneuver through any terrain park in a fun and safe way!</p>
+        </section> 
+
+        <section>
+            <h2>Adult Lessons</h2>
+            <p>Adult full day lessons from 9am through 3pm include lift access, rentals (ski or snowboard) and lunch. Adults are divided by ability and experience. We have expert instructors for all levels!</p>
+        </section>
+
+        <section>
+            <h2>Cost</h2>
+            <p>All of our lessons are $100/day. If you prepay for three full days you will receive a free season pass to keep practicing your skiing or snowboarding skills for the rest of the season!</p>
+        </section>
+
+        <section>
+            <h2>
+                Registration
+            </h2>
+            <p>
+                Call or email our Ski School Manager: Kent Hoiberg:
+            </p>
+            <ul>
+                <li>Phone: 1-800-555-4SKI</li>
+                <li>Address: 1001 West Main Street Breckenridge, Colorado 80425</li>
+                <li>Our Sponsor: snow.com</li>
+            </ul>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2023 Ski Lodge. All rights reserved.</p>
+            <p><a href="#">Top</a><a href="legal.pdf">Rental Agreement</a></p>
+        </footer>
+        <script src="js.js"></script>
+</body>
