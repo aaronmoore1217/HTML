@@ -13,7 +13,7 @@ function openNav(){
     elLessons.innerHTML = '<i class="fa-solid fa-person-skiing fa-2xl"></i>' + ' Skiing Lessons';
     elSnowReports.innerHTML = '<i class="fa-solid fa-snowflake fa-2xl"></i>' + ' Snow Reports';
     elEmployment.innerHTML = '<i class="fa-solid fa-user-tie fa-2xl"></i>' + ' Employment';
-    elOpenNav.innerHTML = '<a onclick="closeNav()"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>';
+    elOpenNav.innerHTML = '<a onclick="closeNav()"><i class="fa-solid fa-arrow-left fa-2xl"></i></a>'
 }
 function closeNav(){
     document.getElementById("nav").style.width = "auto";
@@ -23,5 +23,5 @@ function closeNav(){
     elLessons.innerHTML = '<i class="fa-solid fa-person-skiing fa-2xl"></i>';
     elSnowReports.innerHTML = '<i class="fa-solid fa-snowflake fa-2xl"></i>';
     elEmployment.innerHTML = '<i class="fa-solid fa-user-tie fa-2xl"></i>';
-    elOpenNav.innerHTML = '<a onclick="openNav()"><i class="fa-solid fa-arrow-right fa-2xl"></i></a>';
+    elOpenNav.innerHTML = '<a onclick="openNav()"><i class="fa-solid fa-arrow-right fa-2xl"></i></a>'
 }

@@ -28,22 +28,29 @@
         <h1 style="color: rgba(65, 65, 65, 0.753); margin-left: 4rem; font-size: larger;"> Events </h1><hr>
     </pageTitle>
     <main id="main">
+
         <label for="site">Choose a Location:</label>
         <select name="site" id="Location">
-            <option value="MountainRetreat">Mountain Retreat</option>S
+            <option>Select Location</option>
+            <option value="MountainRetreat">Mountain Retreat</option>
             <option value="TrailGetaway">Trail Getaway</option>
         </select>
+
         <p>20% discount off the total if booked prior to April 30th<br>
         10% discount off the total if booked prior to May 31st</p>
+
         <form>
-            <input type="date">
+            <input type="date" id="date">
         </form>
-        <button>Schedule</button>
+
+        <button onclick="schedule()" id="myButton">Schedule</button>
+
     </main>
-<!-- Footer Section -->
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2023 Ski Lodge. All rights reserved.</p>
         <p><a href="#">Top</a><a href="legal.pdf">Rental Agreement</a></p>
     </footer>
-    <script src="js.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/js2.js"></script>
 </body>
