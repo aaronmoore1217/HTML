@@ -17,7 +17,7 @@ function openNav(){
 }
 function closeNav(){
     document.getElementById("nav").style.width = "auto";
-    document.getElementById("man").style.marginLeft = "6rem";
+    document.getElementById("main").style.marginLeft = "6rem";
     elHome.innerHTML = '<i class="fa-solid fa-house fa-2xl"></i>';
     elEvents.innerHTML = '<i class="fa-solid fa-calendar-days fa-2xl"></i>';
     elLessons.innerHTML = '<i class="fa-solid fa-person-skiing fa-2xl"></i>';
