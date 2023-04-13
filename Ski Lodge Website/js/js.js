@@ -1,10 +1,11 @@
+    // variables
 let elHome = document.getElementById("home");
 let elEvents = document.getElementById("events");
 let elLessons = document.getElementById("lessons");
 let elSnowReports = document.getElementById("reports");
 let elEmployment = document.getElementById("employment");
 let elOpenNav = document.getElementById("openNav");
-
+    // Side Nav Animation
 function openNav(){
     document.getElementById("nav").style.width = "250px";
     document.getElementById("main").style.marginLeft = "250px";

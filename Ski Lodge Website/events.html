@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
     <script src="https://kit.fontawesome.com/c79696d483.js" crossorigin="anonymous"></script>
     <title>Ski Lodge Website</title>
-    <link href="css/mobiscroll.javascript.min.css" rel="stylesheet" />
-    <script src="js/mobiscroll.javascript.min.js"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -28,23 +26,23 @@
         <h1 style="color: rgba(65, 65, 65, 0.753); margin-left: 4rem; font-size: larger;"> Events </h1><hr>
     </pageTitle>
     <main id="main">
-
+        <!-- Dropdown selection -->
         <label for="site">Choose a Location:</label>
         <select name="site" id="Location">
             <option>Select Location</option>
             <option value="MountainRetreat">Mountain Retreat</option>
             <option value="TrailGetaway">Trail Getaway</option>
         </select>
-
         <p>20% discount off the total if booked prior to April 30th<br>
         10% discount off the total if booked prior to May 31st</p>
-
+        
+        <!-- Date Input -->
         <form>
-            <input type="date" id="date">
+            <input type="date" id="date"> 
         </form>
-
-        <button onclick="schedule()" id="myButton">Schedule</button>
-
+        <button type="button" onclick="schedule()" id="myButton" name="myButton">Schedule</button><br><br>
+        <label for="checkout" id="cost">Total Cost: $</label>
+        <button name="checkout">Checkout</button>
     </main>
     <!-- Footer Section -->
     <footer>
