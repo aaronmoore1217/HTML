@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://kit.fontawesome.com/c79696d483.js" crossorigin="anonymous"></script>
+    <title>Ski Lodge Website</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <ul id="nav">
+                <li id="openNav"><a onclick="openNav()"><i class="fa-solid fa-arrow-right fa-2xl"></i></a></li>
+                <li><a href="index.html" id="home"><i class="fa-solid fa-house fa-2xl"></i></a></li>
+                <li><a href="events.html" id="events"><i class="fa-solid fa-calendar-days fa-2xl"></i></a></li>
+                <li><a href="lessons.html" id="lessons"><i class="fa-solid fa-person-skiing fa-2xl"></i></a></li>
+                <li><a href="snow-reports.html" id="reports"><i class="fa-solid fa-snowflake fa-2xl"></i></a></li>
+                <li><a href="employment.html" id="employment"><i class="fa-solid fa-user-tie fa-2xl"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <pageTitle>
+        <h1 style="color: rgba(65, 65, 65, 0.753); margin-left: 4rem; font-size: larger;"> Snow Reports </h1><hr>
+    </pageTitle>
+    <!-- Weather API -->
+    <main id="main">
+        <a class="weatherwidget-io" href="https://forecast7.com/en/39d42n105d20/80425/?unit=us" data-label_1="BUFFALO CREEK" data-label_2="WEATHER" data-theme="original" >BUFFALO CREEK WEATHER</a>
+        <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
+    </main>
+<!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Ski Lodge. All rights reserved.</p>
+        <p><a href="#">Top</a><a href="legal.pdf">Rental Agreement</a></p>
+    </footer>
+    <script src="js/js.js"></script>
+</body>

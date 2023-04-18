@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", "Segoi UI", "Open Sans", sans-serif;
+    font-size: 1rem;
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+form{
+    max-width: 400px;
+    margin: 10px auto;
+    padding: .5rem 1rem;
+}
+form h1{
+
+}
+.container{
+    background-color: #fff;
+    border-radius: 25px;
+    width: 350px;
+    box-shadow: rgba(red, green, blue, alpha) opx 2px 5px -1px, rgba( blue, green, red, alpha)
+}
+.field{
+    margin-bottom: .75rem;
+}
+label{
+    display: inline-block;
+}
+button{
+
+}
+button:hover {
+    background: #033072;
+    border-color: #0b5ed7;
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 .25rem rgb(49, 132, 253, .5)
+}
+small{
+    color: red;
+}
+input, textarea, select{
+    border: solid 1px #ccc;
+    border-radius: 3px;
+    display: inline-block;
+    padding: .5rem .75rem;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+}
+input::placeholder{
+    color: #696969
+}
+label.radio{
+    display: block;
+    margin-left: auto;
+}
+.radio + .radio {
+    margin-left: 1rem;
+}
+input[type=radio]{
+    vertical-align: baseline;
+    width: auto;
+}
+
+
+/* these styles are for error and success checking */
+input.success{
+    border-color: #198754;
+}
+input.success:focus{
+    box-shadow: 0 0 0 .25rem rgb(25,135,84, .25)
+}
+input.error{
+    border-color: #dc3545;
+}
+input.error:focus{
+    box-shadow: 0 0 0 .25rem rgb(220 53 69 / 25%)
+}
+input[type=radio].success{
+    border-color: #198754;
+}
+input[type=radio].success:focus{
+    box-shadow: 0 0 0 .25rem rgb(25,135,84, .25)
+}
+input[type=radio].error{
+    border-color: #dc3545;
+}
+input[type=radio].error:focus{
+    box-shadow: 0 0 0 .25rem rgb(220 53 69 / 25%)
+}
