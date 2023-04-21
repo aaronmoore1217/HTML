@@ -12,7 +12,6 @@ nav{
     width:100%;
     justify-content: space-between;
     background-color: #0093c9;
-    
 }
 .logo{
     display: flex;
@@ -35,7 +34,7 @@ nav ul{
     margin: 0;
     padding: 0;
     display:flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     list-style: none;
