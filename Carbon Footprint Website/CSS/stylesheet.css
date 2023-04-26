@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Fira Mono', monospace;
 }
+body{
+    margin-top: 60px;
+}
 /* NAV STYLING */
 nav{
     position: fixed;
@@ -23,19 +26,19 @@ nav ul{
     list-style: none;
 }
 nav li{
-    padding: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     margin:0;
 }
 nav a{
     color:whitesmoke;
-    font-size: 1.2rem;
+    font-size: 2.4vw;
     text-decoration: none;
 }
 /* MAIN STYLING */
 header{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     top: 0;
     justify-content: center;
 }
@@ -44,10 +47,10 @@ header{
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    padding: 0 0 2rem 0;
+    align-content: center;
     margin: 0;
-    color: whitesmoke;
-    font-size: 4.2rem;
+    color: rgb(255, 255, 255);
+    font-size: 7vw;
     font-weight: 400;
 }
 .headerSub{
@@ -55,14 +58,29 @@ header{
     justify-content: center;
     text-align: center;
     padding: 0 2rem 2rem 2rem;
-    color: gray;
+    color: blanchedalmond;
+    font-size: 2vw;
 }
 .backgroundImg{
     height: 100%;
-    overflow:hidden;
+    width: 100%;
+    overflow: hidden;
     filter:brightness(30%);
     position: absolute;
     z-index: -1;
-    top: 0;
+    bottom: 0;
     right: 0;
+    display: none;
+}
+
+/* VISUALIZATION SECTION */
+.visHeader{
+    text-align: center;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.visAmount{
+    font-size: 10vw;
+    margin-top: 100px;
+    text-align: center;
 }
