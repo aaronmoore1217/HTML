@@ -84,3 +84,36 @@ header{
     margin-top: 100px;
     text-align: center;
 }
+/* ABOUT SECTION */
+img{
+    float: right;
+    display: block;
+    width: 30vw;
+    top: 0;
+    right: 0;
+}
+h1{
+    font-size: 3vw;
+    margin: 0vh 0 2vw 2vw;
+}
+p{
+    font-size: 1.1vw;
+    line-height: 2vw;
+    margin: 0 0 3vh 3.5vw;
+}
+iframe{
+    width: 50vw;
+    height: 50vh;
+    margin: 2rem;
+}
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 5vw;
+        margin: 0vh 0 2vw 2vw;
+    }
+    p{
+        font-size: 2.2vw;
+        line-height: 3vw;
+        margin: 0 0 6vw 3.5vw;
+    }
+}
