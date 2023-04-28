@@ -4,7 +4,7 @@
     font-family: 'Fira Mono', monospace;
 }
 body{
-    margin-top: 60px;
+    margin-top: 10vh;
 }
 /* NAV STYLING */
 nav{
@@ -85,10 +85,11 @@ header{
     text-align: center;
 }
 /* ABOUT SECTION */
-img{
+.img{
     float: right;
     display: block;
     width: 30vw;
+    margin: 5vw;
     top: 0;
     right: 0;
 }
@@ -106,6 +107,19 @@ iframe{
     height: 50vh;
     margin: 2rem;
 }
+
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 4vw;
+        margin: 0vh 0 2vw 2vw;
+    }
+    p{
+        font-size: 1.65vw;
+        line-height: 2.5vw;
+        margin: 0 0 4.5vw 3.5vw;
+    }
+}
+
 @media screen and (max-width: 600px){
     h1{
         font-size: 5vw;
