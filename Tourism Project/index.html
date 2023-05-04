@@ -9,6 +9,8 @@
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <script src="jquery-color-main/jquery.color.js"></script>
+        <script src="https://malsup.github.io/jquery.cycle2.js"></script>
+
     </head>
 
     <body>
@@ -23,7 +25,19 @@
             </ul>
         </nav>
         <main>
-            <img style="width:100%" src="https://images.unsplash.com/photo-1587410131477-f01b22c59e1c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dGFsbCUyMHRvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80">
+            <div class="slideshowContainer">
+            <div class="slides cycle-slideshow cycle-autoinit" 
+                data-cycle-fx="scrollHorz"
+                data-cycle-speed="5000"
+                data-cycle-timeout="2500"
+                data-cycle-easing="linear"
+                >
+                <img src="https://cdn.wallpapersafari.com/31/57/Mnj9wO.jpg">
+                <img src="https://images.hdqwalls.com/download/wish-you-were-here-4k-45-1920x1080.jpg">
+                <img src="https://cdn.wallpapersafari.com/63/57/bxXpfn.jpg">
+                <img src="https://wallpapers.com/images/featured/0dg5rw0rk6rry9lf.jpg">
+            </div>
+        </div>
         </main>
         <script src="JS/jQuery.js"></script>
     </body>
