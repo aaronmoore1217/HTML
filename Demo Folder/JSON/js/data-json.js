@@ -1,4 +1,4 @@
-let xhr = new XMLHttpRequest(); //router = peripherals("top")
+let xhr = new XMLHttpRequest(); 
 
 xhr.onload = function() {
 
@@ -22,6 +22,6 @@ xhr.onload = function() {
     }
 }
 
-xhr.open('GET', 'data/data.json', true); //router.open
+xhr.open('GET', 'data/data.json', true);
 
-xhr.send(null); //router.recieve
+xhr.send(null);
