@@ -35,9 +35,14 @@ nav a{
 }
 
 section {
-padding-top: 1rem;
-
+    scroll-margin-top: 2.6rem;
 }
+  
+section:nth-of-type(2n) {
+    padding-left: 3rem;
+}
+  
+
   
 
 /* Carousel */
