@@ -1,43 +1,24 @@
 {
-    "content": [
-      {
-        "container": "section",
-        "header": 
+  "Restaurants": [
+    {
+      "container": "card",
+      "imgContainer": "cardImg",
+      "textContainer": "cardText",
+
+      "content": [
         {
-            "element": "h1",
-            "text": "BALLER"
+          "element": "img",
+          "text": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3"
         },
-        "body": 
         {
-            "element": "p",
-            "text": "HELP ME HEEELP HELP MEEEE"
-        }
-      },
-      {
-        "container": "section",
-        "header": 
-        {
-            "element": "h1",
-            "text": "BALLER"
+          "element": "h1",
+          "text": "Milestone 229"
         },
-        "body": 
         {
-            "element": "p",
-            "text": "HELP ME HEEELP HELP MEEEE"
+          "element": "p",
+          "text": "A bar/restaurant located in the ballalh lhalb laha"
         }
-      },
-      {
-        "container": "section",
-        "header": 
-        {
-            "element": "h1",
-            "text": "BALLER"
-        },
-        "body": 
-        {
-            "element": "p",
-            "text": "HELP ME HEEELP HELP MEEEE"
-        }
-      }
-    ]
-  }
+      ]
+    }
+  ]
+}
