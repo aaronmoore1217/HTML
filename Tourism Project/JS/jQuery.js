@@ -9,3 +9,7 @@ $(function () {
 			}
 		});
 });
+
+$(window).resize(function () {
+	$('IFRAME').width($(window).width());
+});

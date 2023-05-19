@@ -26,6 +26,7 @@ p {
 html {
     background-color: rgb(22, 22, 22);
     scroll-behavior: smooth;
+
 }
 
 /* NAVBAR */
@@ -58,10 +59,11 @@ nav a {
 
 section {
     scroll-margin-top: 2.6rem;
-    display: block;
+    display: flex;
     margin: 0 auto;
     width: 300px;
     text-align: center;
+
 }
 
 
@@ -70,10 +72,9 @@ section {
     width: 700px;
 }
 
-iframe {
-    width: 1px;
-    min-width: 100%;
-}
+
+
+
 
 
 
