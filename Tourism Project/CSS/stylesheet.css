@@ -57,6 +57,8 @@ nav a {
     justify-content: center;
 }
 
+/* MAIN */
+
 section {
     scroll-margin-top: 2.6rem;
     display: flex;
@@ -66,19 +68,21 @@ section {
 
 }
 
+/* MAP */
 
 #Map {
     height: 624px;
     width: 700px;
 }
 
+/*  */
 
 
-
-
+/*  */
 
 
 /* Carousel */
+
 .slideshowContainer {
     width: 100%;
     display: flex;
@@ -94,7 +98,8 @@ img {
     width: 100.2%;
 }
 
-/* Footer Section CSS*/
+/* FOOTER */
+
 .footer__container {
     background-color: rgb(32, 32, 32);
     padding: 5rem 0;
