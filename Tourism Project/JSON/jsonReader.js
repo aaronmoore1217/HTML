@@ -41,7 +41,6 @@ let xhr = new XMLHttpRequest();
 xhr.onload = function () {
     if (xhr.status === 200) {
         let responseObject = JSON.parse(xhr.responseText);
-        let content = document.querySelector("body");
         let Jason = responseObject.Restaurants;
         let cardContainer = createSection(Jason[0].cardContainer);
         content.appendChild(cardContainer);
@@ -67,7 +66,7 @@ xhr.onload = function () {
             container.appendChild(imgBox);
             container.appendChild(textBox);
             container.appendChild(buttonBox);
-            cardContainer.appendChild(container);
+            cardContainer.appendChild(this);
         }
     }
 }
