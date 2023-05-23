@@ -82,11 +82,16 @@ section {
 
 /* CARDS */
 
+.cardContainer{
+    display: grid;
+    grid-gap: 10px;
+    color: white;
+}
 .card {
-    border: 2px solid black;
+    border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    background-color: rgb(95, 111, 167);
-    margin: 10px;
+    background-color: rgb(63, 102, 241);
+    margin: 0 50px 20px 50px;
     display: flex;
     flex-direction: row;
 }
@@ -105,7 +110,8 @@ section {
 .cardText {
     display: flex;
     flex-direction: column;
-    margin: 5px 5px 5px 5px;
+    margin: 5px;
+    
 }
 
 .cardText .cardHeader {
@@ -120,10 +126,7 @@ section {
     font-size: 1rem;
     margin: 0;
 }
-.cardContainer{
-    display: flex;
-    flex-direction: column;
-}
+
 .cardButton{
     display: flex;
     align-items: last baseline;
@@ -132,8 +135,10 @@ section {
 }
 .cardButton button{
     white-space: nowrap;
-    background-color: blue;
+    background-color: rgb(37, 37, 65);
     width: 100%;
+    color: white;
+    padding: 5px;
 }
 
 /*  */

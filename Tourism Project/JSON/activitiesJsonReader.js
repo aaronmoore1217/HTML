@@ -22,18 +22,16 @@ function createEl(element, text) {
 function createButton(element, text, link) {
     let anchor = document.createElement("a");
     anchor.href = link;
-    
+
     let newLi = document.createElement("button");
     newLi.className = element;
     let textNode = document.createTextNode(text);
     newLi.appendChild(textNode);
-    
+
     anchor.appendChild(newLi);
 
     return anchor;
 }
-
-
 
 //json parsing
 let xhr = new XMLHttpRequest();
@@ -41,7 +39,8 @@ let xhr = new XMLHttpRequest();
 xhr.onload = function () {
     if (xhr.status === 200) {
         let responseObject = JSON.parse(xhr.responseText);
-        let Jason = responseObject.Restaurants;
+        let Jason = responseObject.Activities;
+        let content = document.getElementById("Activities");
         let cardContainer = createSection(Jason[0].cardContainer);
         content.appendChild(cardContainer);
         //loop through object to obtain all elements/data to add to the webpage
@@ -49,7 +48,7 @@ xhr.onload = function () {
             let imgBox = createSection(Jason[i].imgContainer);
             let textBox = createSection(Jason[i].textContainer);
             let container = createSection(Jason[i].container);
-            let buttonBox = createSection("cardButton")
+            let buttonBox = createSection("cardButton");
             for (let b = 0; b < Jason[i].content.length; ++b) {
                 if (Jason[i].content[b].element === "img") {
                     imgBox.appendChild(createEl(Jason[i].content[b].element, Jason[i].content[b].text))
@@ -60,17 +59,16 @@ xhr.onload = function () {
                 else {
                     textBox.appendChild(createEl(Jason[i].content[b].element, Jason[i].content[b].text))
                 }
-
             }
 
             container.appendChild(imgBox);
             container.appendChild(textBox);
             container.appendChild(buttonBox);
-            cardContainer.appendChild(this);
+            cardContainer.appendChild(container);
         }
     }
 }
 
-xhr.open('GET', 'json.json', true);
+xhr.open('GET', 'JSON/Activities.json', true);
 
 xhr.send(null);
