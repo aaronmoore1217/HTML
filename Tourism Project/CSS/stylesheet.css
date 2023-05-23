@@ -6,21 +6,26 @@
 }
 
 h1 {
+    font-size: 2rem;
     text-decoration: none;
     color: azure;
     text-align: center;
     display: block;
     margin: auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 p {
+    font-size: 1rem;
     text-decoration: none;
     color: azure;
     word-wrap: break-word;
-    width: 800px;
+    width: 70%;
     text-align: justify;
     display: block;
-    margin: auto;
+    margin: auto; 
+    padding-bottom: 50px;
 }
 
 html {
@@ -62,10 +67,9 @@ nav a {
 section {
     scroll-margin-top: 2.6rem;
     display: flex;
-    margin: 0 auto;
-    width: 300px;
-    text-align: center;
-
+    flex-direction: column;
+    text-align: justify;
+    
 }
 
 /* MAP */
@@ -73,10 +77,64 @@ section {
 #Map {
     height: 624px;
     width: 700px;
+    margin: 0 auto;
 }
 
-/*  */
+/* CARDS */
 
+.card {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(95, 111, 167);
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cardImg {
+    display: flex;
+    height: auto;
+}
+
+.cardImg img {
+    border-radius: 20px;
+    height: 150px;
+    margin: 5px 10px 5px 5px;
+}
+
+.cardText {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px 5px 5px;
+}
+
+.cardText .cardHeader {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 5px;
+    margin-top: 0;
+}
+
+.cardText .cardParagraph {
+    padding: 0 0 5px 5px;
+    font-size: 1rem;
+    margin: 0;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+}
+.cardButton{
+    display: flex;
+    align-items: last baseline;
+    margin: 10px;
+    
+}
+.cardButton button{
+    white-space: nowrap;
+    background-color: blue;
+    width: 100%;
+}
 
 /*  */
 

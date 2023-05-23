@@ -45,3 +45,33 @@ nav a {
     top: 50%;
     transform:translate(-50%,-50%);
 }
+
+/* Cards */
+
+.cardContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-gap: 20px;
+    width: auto;
+    height: auto;
+    margin: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #fff932;
+    border: 1px solid black;
+    width: 100%;
+    height: 100%;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card p{
+    color: black;
+    fONT-size: 50px;
+}

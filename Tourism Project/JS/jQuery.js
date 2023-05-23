@@ -10,6 +10,11 @@ $(function () {
 		});
 });
 
-$(window).resize(function () {
-	$('IFRAME').width($(window).width());
+$(window).on("resize", function () {
+	if (($(window).width()) < ($('Iframe').width())) {
+		$('Iframe').width(($(window).width()));
+	}
+	else if ($(window).width() > 700) {
+		$('iframe').width(700)
+	}
 });

@@ -1,3 +1,6 @@
 $("#balls").on("click", function(){
-    $("#transition").css("src", "images/sample-gif.gif")
+    $("#transition").attr("src", "images/sample-gif.gif")
+    setTimeout(function(){
+        window.location.replace("menu.html")
+    }, 1100)
 })
