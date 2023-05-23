@@ -18,3 +18,4 @@ $(window).on("resize", function () {
 		$('iframe').width(700)
 	}
 });
+
