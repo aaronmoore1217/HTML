@@ -5,7 +5,7 @@
     
 }
 body{
-    background-color: black;
+    background-color: #c8c197;
 }
 
 /* NAVBAR */
@@ -38,6 +38,8 @@ nav a {
 
 /* FUNNY ANIMATED TRANSITION */
 
+
+
 .transition{
     position: fixed;
     z-index: 100;
@@ -46,32 +48,51 @@ nav a {
     transform:translate(-50%,-50%);
 }
 
+/* BODY */
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header img{
+    width: 100%;
+}
+.header p{
+    text-align: right;
+    justify-self: center;
+    align-self: center;
+    font-size: 50px;
+}
+
 /* Cards */
 
 .cardContainer{
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr 2fr 2fr 2fr;
-    grid-gap: 20px;
+    grid-gap: 50px;
     width: auto;
     height: auto;
     margin: 2rem;
 }
 .card{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-content: center;
     background-color: #fff932;
     border: 1px solid black;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
 }
 .card img{
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    border-radius: 13px;
+    margin: 20px 0;
+    justify-self: center;
 }
 .card p{
     color: black;
-    fONT-size: 50px;
+    font-size: 20px;
+    text-align: center; 
+    margin: 10px;
 }
